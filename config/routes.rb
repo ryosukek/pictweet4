@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   delete 'tweets/:id'   => 'tweets#destroy' # ツイート削除
   patch 'tweets/:id'    => 'tweets#update'  # ツイート編集後更新
   get 'tweets/:id/edit' => 'tweets#edit'    # ツイート編集
+  get 'tweets/:id'      => 'tweets#show'    # ツイート詳細画面
   get 'users/:id'       => 'users#show'     # Mypage一覧画面
 end
